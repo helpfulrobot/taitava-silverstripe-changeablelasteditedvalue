@@ -1,0 +1,20 @@
+{
+  "name": "taitava/silverstripe-changeablelasteditedvalue",
+  "description": "By default SilverStripe 3.1 overwrites the LastEdited field every time you write DataObjects to the database. This module allows you to keep your changes in the LastEdited field on any DataObject. It does not prevent the LastEdited field from getting updated when no manual edits has been done to it, so the module should not interfere with normal writing, only when you have explicitly set your own value to the LastEdited field.",
+  "type": "silverstripe-module",
+  "license": "MIT",
+  "require": {
+    "silverstripe/framework": "~3.1",
+    "silverstripe/cms": "~3.1"
+  },
+  "keywords": ["silverstripe","LastEdited"],
+  "authors": [{
+    "name": "Jarkko Linnanvirta",
+    "email": "posti@taitavasti.fi",
+    "homepage": "http://taitavasti.fi",
+    "role": "Developer"
+  }],
+  "extra": {
+    "installer-name": "changeablelasteditedvalue"
+  }
+}
