@@ -7,13 +7,23 @@ By default SilverStripe 3.1 overwrites the LastEdited field every time you write
 
 Just the regular installation process: put the folder "changeablelasteditedvalue" to your project's root folder and goto the url /dev/build?flush=all in your browser.
 
-There is nothing to configure. The module works automatically for all objects inherited from DataObject. So just put the module in place and your modifications to the LastEdited field will start to work like magic!
-
 You can also install this via composer:
 
 ```
 composer require "taitava/siverstripe-changeablelasteditedvalue:*"
 ```
+
+The module works automatically for all objects inherited from DataObject. So just put the module in place and your modifications to the LastEdited field will start to work like magic!
+
+You can also use this module for the PublishDate field on Versioned objects. This needs to be enabled in the YML config in mysite/_config/changeablelasteditedvalue.yml:
+
+```
+ChangeableLastEditedValue:
+  affect_publish_date: true #default: false
+  affect_last_edited: true #default: true
+```
+
+From there you can also turn off the feature for the LastEdited field if you need to.
 
 ## Maintainer Contact
 
